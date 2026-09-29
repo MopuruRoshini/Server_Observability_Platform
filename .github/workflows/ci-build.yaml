@@ -11,7 +11,7 @@ on:
 
 env:
   IMAGE_REG: ghcr.io
-  IMAGE_REPO: benc-uk/dotnet-demoapp
+  IMAGE_REPO: MopuruRoshini/Server_Observability_Platform
 
 jobs:
   test:
@@ -64,10 +64,4 @@ jobs:
           echo ${{ secrets.GITHUB_TOKEN }} | docker login $IMAGE_REG -u $GITHUB_ACTOR --password-stdin
           make push
 
-      - name: "Trigger AKS release pipeline"
-        if: github.ref == 'refs/heads/master'
-        uses: benc-uk/workflow-dispatch@v1
-        with:
-          workflow: "CD Release - AKS"
-          token: ${{ secrets.GH_PAT }}
-          inputs: '{ "IMAGE_TAG": "${{ env.IMAGE_TAG }}" }'
+      

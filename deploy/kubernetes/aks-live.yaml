@@ -1,6 +1,6 @@
 image:
-  repository: ghcr.io/benc-uk/dotnet-demoapp
-  pullPolicy: Always
+repository: ghcr.io/mopururoshini/server-observability-platform
+pullPolicy: Always
 
 service:
   targetPort: 5000
@@ -22,9 +22,9 @@ env:
 ingress:
   enabled: true
   className: nginx
-  host: dotnet-demoapp.kube.benco.io
+  host: server-observability-platform.local
   annotations:
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
   tls:
     enabled: true
-    secretName: benco-io-cert
+    secretName: server-observability-tls

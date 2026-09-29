@@ -6,7 +6,7 @@ on:
 
 env:
   IMAGE_REG: ghcr.io
-  IMAGE_REPO: benc-uk/dotnet-demoapp
+  IMAGE_REPO: MopuruRoshini/Server_Observability_Platform
 
 jobs:
   publish-image:

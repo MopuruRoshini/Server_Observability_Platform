@@ -9,11 +9,11 @@ fi
 
 read -r -d '' NOTES << EOM
 \`\`\`
-docker pull ghcr.io/benc-uk/dotnet-demoapp:$VER
+docker pull ghcr.io/MopuruRoshini/Server_Observability_Platform:$VER
 \`\`\`
 
 \`\`\`
-docker run --rm -it -p 3000:3000 ghcr.io/benc-uk/dotnet-demoapp:$VER
+docker run --rm -it -p 5000:5000 ghcr.io/MopuruRoshini/Server_Observability_Platform:$VER
 \`\`\`
 EOM
 

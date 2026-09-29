@@ -1,10 +1,8 @@
 #
-# See this Helm chart for options
-# https://github.com/benc-uk/helm-charts/tree/master/webapp
 #
 
 image:
-  repository: ghcr.io/benc-uk/dotnet-demoapp
+  repository: ghcr.io/mopururoshini/server-observability-platform
   tag: latest
   pullPolicy: Always
 

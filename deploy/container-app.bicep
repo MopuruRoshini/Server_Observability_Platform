@@ -9,7 +9,7 @@ param appName string = 'dotnet-demoapp'
 param location string = resourceGroup().location
 
 @description('Container image to deploy')
-param image string = 'ghcr.io/benc-uk/dotnet-demoapp:latest'
+param image string = 'ghcr.io/mopururoshini/server-observability-platform:latest'
 
 @description('Optional feature: OpenWeather API Key')
 param weatherApiKey string = ''

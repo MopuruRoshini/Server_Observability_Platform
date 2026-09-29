@@ -1,15 +1,20 @@
-# Kubernetes
+# Kubernetes Deployment
 
-Deployment into Kubernetes is simple using a [generic Helm chart for deploying web apps](https://github.com/benc-uk/helm-charts/tree/master/webapp)
+This directory contains Kubernetes deployment configuration for the Server Observability Platform.
 
-Make sure you have [Helm installed first](https://helm.sh/docs/intro/install/)
+## Deployment
 
-First add the Helm repo
+The application can be deployed to a Kubernetes cluster using the configuration files in this directory.
+
+### Prerequisites
+
+- Docker
+- Kubernetes cluster
+- kubectl
+
+### Apply the deployment
+
+From the project root:
+
 ```bash
-helm repo add benc-uk https://benc-uk.github.io/helm-charts
-```
-
-Make a copy of `app.sample.yaml` to `myapp.yaml` and modify the values to suit your environment. If you're in a real hurry you can use the file as is and make no changes.
-```bash
-helm install demo benc-uk/webapp --values myapp.yaml
-```
+kubectl apply -f deploy/kubernetes/ 

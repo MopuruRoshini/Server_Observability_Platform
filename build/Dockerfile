@@ -24,10 +24,10 @@ RUN dotnet publish --no-restore --configuration Release
 FROM mcr.microsoft.com/dotnet/aspnet:$IMAGE_BASE
 
 # Metadata in Label Schema format (http://label-schema.org)
-LABEL org.label-schema.name    = ".NET Core Demo Web App" \
-      org.label-schema.version = "1.5.0" \
-      org.label-schema.vendor  = "Ben Coleman" \
-      org.opencontainers.image.source = "https://github.com/benc-uk/dotnet-demoapp"
+LABEL org.label-schema.name = "Server Observability Platform" \
+      org.label-schema.version = "1.0.0" \
+      org.label-schema.vendor = "Roshini" \
+      org.opencontainers.image.source = "https://github.com/MopuruRoshini/Server_Observability_Platform"
 
 # Seems as good a place as any
 WORKDIR /app
